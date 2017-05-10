@@ -39,6 +39,10 @@ YUI.add('ez-alloyeditor-button-image-tests', function (Y) {
                 "BUTTON", ReactDOM.findDOMNode(button).tagName,
                 "The component should generate a button"
             );
+            Assert.areEqual(
+                null, ReactDOM.findDOMNode(button).disabled,
+                "The button should not be disabled"
+            );
         },
     });
 
